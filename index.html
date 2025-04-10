@@ -2,32 +2,37 @@
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Sigmar&display=swap" rel="stylesheet">
-    <title>Vancelos</title>
-    <script src="https://kit.fontawesome.com/7d5e44e632.js" crossorigin="anonymous"></script>
+    <title>About Me</title>
 </head>
 <body>
-    <section id="card">
-        <div class="fundo">
-            <div class="content">
-                <img src="images/Lil Peep x Kaneki.png" onclick="alert('Maybe there is no meaning in life, but you need a reason to live.')">
-                <h1>Vancelos</h1>
-                <div class="redes_sociais">
-                    <a target="_blank" href="https://github.com/Vancelos"><i class="fa-brands fa-github"></i></a>
-                    <a target="_blank" href="mailto:vasconcelos13@ua.pt"><i class="fa-solid fa-envelope"></i></a>
-                    <a target="_blank" href="https://www.linkedin.com/in/vancelos/"><i class="fa-brands fa-linkedin"></i></a>
-                </div>
-                <p>Made by Vancelos</p>
+    <div class="lang">
+        <div class="switch">
+            <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
+            <label for="language-toggle"></label>
+            <span class="on">PT</span>
+            <span class="off">EN</span>
+          </div>
+    </div>
+    <div class="card">
+        <div class="content">
+            <img src="images/pfp.jpg" alt="Profile Picture" class="pfp" onclick="(document.getElementById('language-toggle').unchecked) ? alert('Aqueles que não arriscam nada, não fazem nada, não têm nada, e não são nada.') : alert('Those who risk nothing, do nothing, have nothing, and are nothing.')">
+            <div class="name">
+                <h1>André Santos Vasconcelos</h1>
+                <h3>Vancelos</h3>
             </div>
+            <div id="about-me">
+                <p>Sou um entusiasta de tecnologia, com experiência em redes, algoritmos e programação. Tenho um interesse contínuo em explorar soluções inovadoras e aprimorar meus conhecimentos.</p>
+            </div>
+            <div class="social">
+                <a target="_blank" href="mailto:vasconcelos13@ua.pt"><i class="bi bi-envelope-fill"></i></a>
+                <a target="_blank" href="https://github.com/Vancelos"><i class="bi bi-github"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/vancelos/"><i class="bi bi-linkedin"></i></a>
+            </div>
+            <h6>Made By Vancelos</h6>
         </div>
-    </section>
+    </div>
+    <script src="scripts/index.js"></script>
 </body>
 </html>
